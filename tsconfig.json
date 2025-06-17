@@ -1,11 +1,28 @@
 {
   "compilerOptions": {
+    // Versão de JS a ser usada após a compilação (quanto mais antigo, mais compatível.
+    // Quanto mais recente, mais uso de recursos modernos do JS)
     "target": "es6",
+
+    // Ativa compatibilidade com módulos Node.js
     "module": "commonjs",
+
+    // Habilita o modo estrito
     "strict": true,
+
+    // Define diretório de saída para os arquivos JS compilados
     "outDir": "./dist",
-    "noEmitOnError": true
+
+    // Não gera arquivo JS se houver erros
+    "noEmitOnError": true,
+
+    // Permite importar módulos ES também
+    "esModuleInterop": true
   },
+
+  // Indica quais arquivos/extensões o compilador deve buscar
   "include": ["*.ts"],
+
+  // Indica que o compilador deve ignorar
   "exclude": ["node_modules", "dist"]
 }

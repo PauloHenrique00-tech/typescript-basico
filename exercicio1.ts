@@ -14,8 +14,8 @@ Atenção: O parâmetro cor deve ser do tipo Cor e aceitar somente 5 cores.
 type Cores = "laranja" | "roxo" | "azul" | "vermelho" | "verde";
 
 function exibirCor(nome: string, cor: Cores = "roxo"): string {
-  return `Olá ${nome}, ${cor} é a sua favorita.`;
+  return `Olá ${nome}, ${cor} é a sua cor favorita.`;
 }
 
 console.log(exibirCor("João", "azul"));
-console.log(exibirCor("pedro"));
+console.log(exibirCor("Sofia"));

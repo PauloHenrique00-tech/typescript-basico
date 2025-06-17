@@ -1,3 +1,5 @@
+import { separador } from "./modulos";
+
 // 02-tipagem-basica.ts
 export {};
 
@@ -12,3 +14,5 @@ console.log(`${nome} tem ${idade} anos.`);
 idade = 31;
 console.log(`${nome} agora tem ${idade} anos.`);
 console.log(`Status: ${ativo ? "Ativo" : "Inativo"}`);
+
+separador();

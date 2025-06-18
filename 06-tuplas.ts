@@ -1,4 +1,4 @@
-import { separador } from "./modulos";
+import { separador } from "./modulos.js";
 
 // 06-tuplas.ts
 export {};
@@ -30,12 +30,17 @@ console.log(produtoC);
 separador();
 
 // Usando tupla no retorno de função
-function verificarOperacao(sucesso: boolean): [number, string] {
+type Resultado = [number, string];
+function verificarOperacao(sucesso: boolean): Resultado {
   if (sucesso) {
     return [200, "Operação realizada com sucesso!"];
   }
   return [500, "Erro inesperado no servidor"];
 }
 
-let resultadoDaOperacao = verificarOperacao(false);
-console.log(resultadoDaOperacao);
+let [codigo, mensagem] = verificarOperacao(true);
+console.log(codigo, mensagem);
+
+//const resultadoFinal = verificarOperacao(false);
+
+//console.log(resultadoFinal);

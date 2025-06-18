@@ -31,3 +31,14 @@ console.log(linguagens[0][0]);
 console.log(linguagens[1][0]);
 
 separador();
+
+/* Mini-exercício
+1) Crie um array de números e calcule a soma de todos os elementos. 
+2) Calcule a soma de todos os elemtentos e guarde numa variável
+3) Mostre o resultado da soma */
+
+const numeros: Array<number> = [10, 20, 30, 40, 50];
+console.log(numeros);
+
+const total = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+console.log(total);

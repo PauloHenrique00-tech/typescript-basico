@@ -29,8 +29,12 @@ const produtoB: Smartphone = {
 console.log(produtoA);
 console.log(produtoB);
 
-function mostrarProduto({nome, preco, garantia}: Produto) {
-  if (qualidade) {
-    return ["produtoA"];
+function mostrarProduto({ nome, preco, garantia }: Smartphone) {
+  console.log(`Nome: ${nome}`);
+  console.log(`Preço: R$ ${preco}`);
+  console.log(`Garantia: ${garantia ?? "Sem garantia"}`);
+  console.log("-----------------------------");
 }
-    return ["produtoB"]
+
+mostrarProduto(produtoA);
+mostrarProduto(produtoB);
